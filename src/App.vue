@@ -1,13 +1,8 @@
 <template>
   <div>
     <button @click="show = !show">切换</button>
-    <Fade duration="0.3s">
-      <div
-        v-if="show"
-        style="width: 100px; height: 100px; background-color: aqua"
-      >
-        fade
-      </div>
+    <Fade :toggle="show">
+      <div style="width: 100px; height: 100px; background-color: aqua">fade</div>
     </Fade>
   </div>
 </template>
